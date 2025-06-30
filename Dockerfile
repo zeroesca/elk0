@@ -51,6 +51,10 @@ EXPOSE 5314/tcp
 
 ENV PORT=5314
 
+ENV NUXT_PUBLIC_DEFAULT_SERVER=zeroes.cache
+
+ENV NUXT_PUBLIC_SINGLE_INSTANCE=true
+
 # Specify container only environment variables ( can be overwritten by runtime env )
 ENV NUXT_STORAGE_FS_BASE='/elk/data'
 
