@@ -168,13 +168,13 @@ export default defineNuxtConfig({
       base: '',
     },
     public: {
-      privacyPolicyUrl: 'https://zeroes.ca/privacy-policy',
+      privacyPolicyUrl: '',
       // We use LibreTranslate (https://github.com/LibreTranslate/LibreTranslate) as
       // our default translation server #76
       translateApi: '',
       // Use the instance where Elk has its Mastodon account as the default
-      defaultServer: 'zeroes.ca',
-      singleInstance: true,
+      defaultServer: 'm.webtoo.ls',
+      singleInstance: false,
     },
     storage: {
       fsBase: 'node_modules/.cache/app',
