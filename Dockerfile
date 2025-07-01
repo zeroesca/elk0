@@ -5,6 +5,9 @@ WORKDIR /elk
 
 FROM base AS builder
 
+ENV NUXT_PUBLIC_DEFAULT_SERVER=zeroes.ca
+ENV NUXT_PUBLIC_SINGLE_INSTANCE=true
+
 # Prepare pnpm https://pnpm.io/installation#using-corepack
 # workaround for npm registry key change
 # ref. `pnpm@10.1.0` / `pnpm@9.15.4` cannot be installed due to key id mismatch · Issue #612 · nodejs/corepack
